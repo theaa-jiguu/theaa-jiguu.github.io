@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKTA-ANMOL ♥</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <!-- <li><a href="#story" class="nav-link">Our Story</a></li> -->
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#journal" class="nav-link">Journal</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header id="home">
+        <div class="hero-content">
+            <h1>THEAA-JIGGU</h1>
+            <p class="subtitle">She is the light that brightens up every corner of my world, and I am that "taara" that reflects her warmth in quiet devotion.</p>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <section id="story" class="love-story">
+            <h2 class="section-title">Our Story</h2>
+            <p>I don’t know how to explain her. She’s not someone I just met—she's someone I somehow always knew. It feels like life brought her when I had almost forgotten how to feel again. She didn’t come into my life with noise—she came in with calm. The kind of calm that makes you want to slow down and just sit with your thoughts. She laughs like nothing’s broken and listens like everything matters. And when I look at her, I feel like I’m seeing a version of life I thought I didn’t deserve—soft, pure, and maybe even a little magical. Maybe this is what comfort looks like in human form. She doesn’t try to fix me, she just stands beside me—and somehow, that’s more than enough.</p>
+        </section>
+        <!--  -->
+        <h2 id="gallery" class="section-title">Our Moments</h2>
+        <div class="photo-grid" id="photoGrid">
+            <!-- Photos will be dynamically added here -->
+        </div>
+
+        <a href="#" class="new-entry-btn" id="addMemoryBtn">Add New Memory</a>
+        
+        <section id="journal" class="journal-section">
+            <h2 class="section-title">Our Journal</h2>
+            <div class="journal-entries" id="journalEntries">
+                <!-- Journal entries will be added here -->
+            </div>
+            <a href="#" class="new-entry-btn" id="newEntryBtn">Add New Entry</a>
+        </section>
+        
+        <section id="timeline" class="timeline">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline-item">
+                    <div class="timeline-date">March 2020</div>
+                    <h3>First Meeting</h3>
+                    <p>We met at Cafe Aurora during a spring rainstorm.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">June 2020</div>
+                    <h3>First Trip Together</h3>
+                    <p>A weekend getaway to the mountains.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">November 2020</div>
+                    <h3>Moving In Together</h3>
+                    <p>Starting our home in our cozy apartment.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">February 2021</div>
+                    <h3>Adopted Our Pet</h3>
+                    <p>Max joined our little family!</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">August 2022</div>
+                    <h3>Engagement</h3>
+                    <p>The start of forever as we said "Yes" to each other.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Made with <span class="heart">♥</span> by Anmol & Ekta</p>
+        <p>© 2025</p>
+    </footer>
+    
+    <!-- Modal for viewing photos -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Full-size photo">
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+    
+    <!-- Modal for viewing full journal entries -->
+    <div id="journalModal" class="journal-modal">
+        <span class="close" onclick="closeJournalModal()">&times;</span>
+        <div class="journal-modal-content">
+            <div class="journal-full-header">
+                <h3 class="journal-full-title" id="journalModalTitle">Journal Entry</h3>
+                <div class="journal-full-meta">
+                    <span id="journalModalDate">Date</span>
+                    <span id="journalModalAuthor">Author</span>
+                </div>
+            </div>
+            <div class="journal-full-body" id="journalModalBody">
+                <!-- Full journal content goes here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
